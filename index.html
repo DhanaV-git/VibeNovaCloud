@@ -3,27 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VibeNova Cloud - DevOps Projects</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>VibeNova Cloud - DevOps Solutions</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .hero {
+            background: linear-gradient(to right, #1c1c1c, #2c2c2c);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+        .btn-custom {
+            background: #ff9800;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+        .btn-custom:hover {
+            background: #e68900;
+        }
+        .card {
+            background: #222;
+            border: none;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+        }
+        .footer {
+            background: #000;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to VibeNova Cloud</h1>
-        <p>Explore different DevOps projects with architecture and implementation details.</p>
-    </header>
-    
-    <main>
-        <h2>DevOps Projects</h2>
-        <ul>
-            <li><a href="projects/aws-eks.html">AWS EKS Deployment</a></li>
-            <li><a href="projects/jenkins-ci-cd.html">Jenkins CI/CD Pipeline</a></li>
-            <li><a href="projects/kubernetes-microservices.html">Kubernetes Microservices</a></li>
-            <li><a href="projects/terraform-aws.html">Terraform on AWS</a></li>
-        </ul>
-    </main>
 
-    <footer>
-        <p>© 2025 VibeNova Cloud | All Rights Reserved</p>
-    </footer>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">VibeNova Cloud</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Transforming DevOps with Excellence</h1>
+            <p>Explore high-quality DevOps solutions, cloud architecture, and automation.</p>
+            <a href="#" class="btn btn-custom mt-3">Explore Projects</a>
+        </div>
+    </section>
+
+    <!-- Project Showcase -->
+    <div class="container mt-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="https://miro.medium.com/max/1400/1*ot3qPlpDpbLMbaPFEkNdUQ.png" class="card-img-top" alt="AWS EKS">
+                    <div class="card-body">
+                        <h5 class="card-title">AWS EKS Deployment</h5>
+                        <p class="card-text">Learn how to deploy Kubernetes clusters on AWS.</p>
+                        <a href="#" class="btn btn-custom">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="https://www.jenkins.io/images/226x256/logo.png" class="card-img-top" alt="Jenkins CI/CD">
+                    <div class="card-body">
+                        <h5 class="card-title">Jenkins CI/CD Pipeline</h5>
+                        <p class="card-text">Automate software deployment with Jenkins.</p>
+                        <a href="#" class="btn btn-custom">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" class="card-img-top" alt="Kubernetes">
+                    <div class="card-body">
+                        <h5 class="card-title">Kubernetes Microservices</h5>
+                        <p class="card-text">Manage scalable microservices with Kubernetes.</p>
+                        <a href="#" class="btn btn-custom">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer mt-5">
+        <p>© 2025 VibeNova Cloud | Excellence in DevOps</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
